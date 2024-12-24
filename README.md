@@ -9,11 +9,11 @@
 
 [![Community Forum][forum-shield]][forum]
 
-# Ollama ROCm Addon for Home Assistant
+# Ollama CPU-only with advanced options Addon for Home Assistant
 
-A [Home Assistant](https://home-assistant.io) add-on repository for [Ollama](https://ollama.com) with ROCm support. I'm a noob just copypasting stuff from https://github.com/SirUli/homeassistant-ollama-addon and https://github.com/trooperthorn/homeassistant-ollama-addon together. So don't expect too much.
+A [Home Assistant](https://home-assistant.io) add-on repository for [Ollama](https://ollama.com). I'm a noob still figuring out Github and mostly just copypasting stuff from [homeassistant-ollama-addon](https://github.com/SirUli/homeassistant-ollama-addon). So don't expect too much.
 
-[![Add Addon to Home Assistant](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https://github.com/Deathproof76/homeassistant-ollama-rocm-addon)
+[![Add Addon to Home Assistant](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https://github.com/Deathproof76/homeassistant-ollama-cpu-only-addon)
 
 Please enter the subfolder [ollama](ollama/) for further details on the [CHANGELOG](ollama/CHANGELOG.md) and [README](ollama/README.md)
 
