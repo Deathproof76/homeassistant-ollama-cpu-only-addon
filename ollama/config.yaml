@@ -1,4 +1,4 @@
-name: "Ollama"
+name: "Ollama-CPU-Only"
 description: "Get up and running with large language models"
 # renovate: datasource=github-tags depName=ollama/ollama
 version: "latest"
