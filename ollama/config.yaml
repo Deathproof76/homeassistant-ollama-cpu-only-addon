@@ -8,8 +8,6 @@ arch:
 url: https://ollama.com
 environment:
   OLLAMA_MODELS: "/config/ollama"
-  # Keep model loaded in memory
-  OLLAMA_KEEP_ALIVE: "-1"
 map:
   - config:rw
 image: docker.io/ollama/ollama
@@ -25,12 +23,9 @@ ports_description:
   11434/tcp: "Ollama API"
 startup: application
 watchdog: tcp://[HOST]:[PORT:11434]
-devices:
-  - /dev/kfd
-  - /dev/dri
 tmpfs: true
-usb: true
-video: true
-full_access: true
-privileged:
-  - PERFMON
+options:
+  OLLAMA_ORIGINS: "*"
+  OLLAMA_FLASH_ATTENTION: "1"
+  OLLAMA_KV_CACHE_TYPE: "q8_0"
+  OLLAMA_MAX_LOADED_MODELS: "1"
