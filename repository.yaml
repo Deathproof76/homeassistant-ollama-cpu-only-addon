@@ -1,3 +1,3 @@
-name: Home Assistant Ollama ROCm Addon
-url: https://github.com/Deathproof76/homeassistant-ollama-rocm-addon
+name: Home Assistant Ollama CPU-only Addon with additional options
+url: https://github.com/Deathproof76/homeassistant-ollama-cpu-only-addon
 maintainer: Deathproof76 (@Deathproof76)
