@@ -14,4 +14,4 @@ To integrate with the default [Ollama](https://www.home-assistant.io/integration
 
 ## Note
 
-By default the container should be able to run with AMD/ROCm GPU support.
+Additional Addon options will soon be available.
