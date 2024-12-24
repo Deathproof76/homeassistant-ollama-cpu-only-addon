@@ -1,0 +1,36 @@
+name: "Ollama-ROCM"
+description: "Get up and running with large language models"
+# renovate: datasource=github-tags depName=ollama/ollama
+version: "rocm"
+slug: "ollama"
+arch:
+  - amd64
+url: https://ollama.com
+environment:
+  OLLAMA_MODELS: "/config/ollama"
+  # Keep model loaded in memory
+  OLLAMA_KEEP_ALIVE: "-1"
+map:
+  - config:rw
+image: docker.io/ollama/ollama
+init: false
+ingress: true
+video: true
+ingress_port: 11434
+ingress_stream: true
+host_network: true
+ports:
+  11434/tcp: 11434
+ports_description:
+  11434/tcp: "Ollama API"
+startup: application
+watchdog: tcp://[HOST]:[PORT:11434]
+devices:
+  - /dev/kfd
+  - /dev/dri
+tmpfs: true
+usb: true
+video: true
+full_access: true
+privileged:
+  - PERFMON
